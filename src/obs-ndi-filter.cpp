@@ -142,8 +142,8 @@ void ndi_filter_offscreen_render(void *data, uint32_t, uint32_t)
 		return;
 	}
 
-	uint32_t width = obs_source_get_base_width(target);
-	uint32_t height = obs_source_get_base_height(target);
+	uint32_t width = obs_source_get_width(target);
+	uint32_t height = obs_source_get_height(target);
 
 	gs_texrender_reset(f->texrender);
 
